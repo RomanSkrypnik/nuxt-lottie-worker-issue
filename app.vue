@@ -7,7 +7,7 @@ import lottie from 'lottie-web/build/player/lottie_light';
 const containerRef = shallowRef();
 
 onMounted(async () => {
-  lottie.useWebWorker(true);
+  lottie.useWebWorker(true); // if you comment this line - animation will play in dev and build modes
 
   const animationData = {
     container: containerRef.value,
